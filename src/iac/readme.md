@@ -12,18 +12,51 @@ Example structure:
     |
     +-- az-modules
     |   |
-    |   +-- resource-group-a-module.bicep
+    |   +-- resource-group-a-module
+    |   |   |
+    |   |   +-- resource-group-a-module.bicep
+    |   |   |
+    |   |   +-- resource-group-a-module.tests.ps1
     |   |
-    |   +-- resource-group-a-module.bicep
+    |   |
+    |   +-- resource-group-b-module
+    |       |
+    |       +-- resource-group-b-module.bicep
+    |       |
+    |       +-- resource-group-b-module.tests.ps1
     |
     +-- az-resources
     |   |
-    |   +-- aks.bicep
+    |   +-- aks
+    |   |   |
+    |   |   +-- aks.bicep
+    |   |   |
+    |   |   +-- aks-example.bicep
+    |   |   |
+    |   |   +-- aks.tests.ps1
     |   |
-    |   +-- key-vault.bicep
+    |   +-- key-vault
+    |   |   |
+    |   |   +-- key-vault.bicep
+    |   |   |
+    |   |   +-- key-vault-example.bicep
+    |   |   |
+    |   |   +-- key-vault.tests.ps1
     |   |
-    |   +-- app-insights.bicep
+    |   +-- app-insights
+    |   |   |
+    |   |   +-- app-insights.bicep
+    |   |   |
+    |   |   +-- app-insights-example.bicep
+    |   |   |
+    |   |   +-- app-insights.tests.ps1
     |   |
-    |   +-- law.bicep
+    |   +-- law
+    |   |   |
+    |   |   +-- law.bicep
+    |   |   |
+    |   |   +-- law-example.bicep
+    |   |   |
+    |   |   +-- law.tests.ps1
     |
 ```
