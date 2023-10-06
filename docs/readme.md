@@ -1,4 +1,3 @@
 # Purpose
 
-This folder should contain technical documentation explaining concept and approaches. Giving a sense of the technical solution at hand. Individual how to use and manual like documentation should be placed
-in the same folder as the script or file at hand. Preferably with the same name as the file in question.
+In this folder, you should include technical documentation that explains concepts and methods, giving a clear idea of the technical solution. Place how-to-use guides and manuals for specific scripts or files in the same folder, ideally with matching names.
