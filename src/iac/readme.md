@@ -1,62 +1,34 @@
 # Purpose
 
-All bicep should be placed in this folder.
+The main folder for any Infrastructure as Code files. As best practices dictate
+these are divided into two categories: modules and controllers.
 
-- Bicep files declaring individual reusable resources should be placed in az-resources
-- Bicep modules should be placed in the az-module
+## Module
+
+These are essentially Bicep files that are used as a unit of code reuse. A
+module can encapsulate a single resource or set of resources, and can be called
+from controllers. This allows you to break down deployments into smaller, more
+manageable components, and reuse common pieces.
+
+## Controllers
+
+These are Infrastructure as Code files which are used to orchestrate or control
+the deployment of various modules. Determining the order in which modules are
+deployed, passing parameters to the modules, and handling any dependencies
+between modules.
 
 Example structure:
 
 ```html
-+-- iac
-    |
-    +-- az-modules
-    |   |
-    |   +-- resource-group-a-module
-    |   |   |
-    |   |   +-- resource-group-a-module.bicep
-    |   |   |
-    |   |   +-- resource-group-a-module.tests.ps1
-    |   |
-    |   |
-    |   +-- resource-group-b-module
-    |       |
-    |       +-- resource-group-b-module.bicep
-    |       |
-    |       +-- resource-group-b-module.tests.ps1
-    |
-    +-- az-resources
-    |   |
-    |   +-- aks
-    |   |   |
-    |   |   +-- aks.bicep
-    |   |   |
-    |   |   +-- aks-example.bicep
-    |   |   |
-    |   |   +-- aks.tests.ps1
-    |   |
-    |   +-- key-vault
-    |   |   |
-    |   |   +-- key-vault.bicep
-    |   |   |
-    |   |   +-- key-vault-example.bicep
-    |   |   |
-    |   |   +-- key-vault.tests.ps1
-    |   |
-    |   +-- app-insights
-    |   |   |
-    |   |   +-- app-insights.bicep
-    |   |   |
-    |   |   +-- app-insights-example.bicep
-    |   |   |
-    |   |   +-- app-insights.tests.ps1
-    |   |
-    |   +-- law
-    |   |   |
-    |   |   +-- law.bicep
-    |   |   |
-    |   |   +-- law-example.bicep
-    |   |   |
-    |   |   +-- law.tests.ps1
-    |
+📦iac
+ ┣ 📂az-controllers
+ ┃ ┣ 📂subscription-vending
+ ┃ ┣ 📂compliance-policies
+ ┃ ┗ 📂defender-plans
+ ┣ 📂az-modules
+ ┃ ┣ 📂Microsoft.Authorization
+ ┃ ┣ 📂Microsoft.KeyVault
+ ┃ ┣ 📂Microsoft.Network
+ ┃ ┗ 📂Microsoft.Storage
+ ┗ 📜readme.md
 ```
