@@ -12,7 +12,7 @@ Example structure:
  ┣ 📂Microsoft.Authorization
  ┃ ┗ 📂policyassignments
  ┃   ┣ 📂samples
- ┃   ┃ ┗ localDeploypolicies.ps1
+ ┃   ┃ ┗ localDeploy.ps1
  ┃   ┣ 📂test
  ┃   ┃ ┣ happy-flow.params.json
  ┃   ┃ ┣ invalid-setting.params.json
@@ -22,7 +22,7 @@ Example structure:
  ┣ 📂Microsoft.KeyVault
  ┃ ┗ 📂vaults
  ┃   ┣ 📂samples
- ┃   ┃ ┗ localDeploypolicies.ps1
+ ┃   ┃ ┗ localDeploy.ps1
  ┃   ┣ 📂test
  ┃   ┃ ┣ happy-flow.params.json
  ┃   ┃ ┣ invalid-setting.params.json
@@ -32,7 +32,7 @@ Example structure:
  ┣ 📂Microsoft.Network
  ┃ ┣ 📂dnszones
  ┃ ┃ ┣ 📂samples
- ┃ ┃ ┃ ┗ localDeploypolicies.ps1
+ ┃ ┃ ┃ ┗ localDeploy.ps1
  ┃ ┃ ┣ 📂test
  ┃ ┃ ┃ ┣ happy-flow.params.json
  ┃ ┃ ┃ ┣ invalid-setting.params.json
@@ -41,7 +41,7 @@ Example structure:
  ┃ ┃ ┗ 📜readme.md
  ┃ ┗ 📂virtualnetworks
  ┃   ┣ 📂samples
- ┃   ┃ ┗ localDeploypolicies.ps1
+ ┃   ┃ ┗ localDeploy.ps1
  ┃   ┣ 📂test
  ┃   ┃ ┣ happy-flow.params.json
  ┃   ┃ ┣ invalid-setting.params.json
@@ -51,7 +51,7 @@ Example structure:
  ┣ 📂Microsoft.Storage
  ┃ ┗ 📂storageaccounts
  ┃   ┣ 📂samples
- ┃   ┃ ┗ localDeploypolicies.ps1
+ ┃   ┃ ┗ localDeploy.ps1
  ┃   ┣ 📂test
  ┃   ┃ ┣ happy-flow.params.json
  ┃   ┃ ┣ invalid-setting.params.json
