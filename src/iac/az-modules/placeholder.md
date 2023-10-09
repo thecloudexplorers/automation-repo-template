@@ -5,9 +5,6 @@ can contain a single resource or set of resources, and can be called
 from controllers. This allows deployments to be small, manageable components,
 and reuse common pieces.
 
-you to break down deployments into smaller, more
-manageable components, and reuse common pieces.
-
 Example structure:
 
 ```html
@@ -15,22 +12,51 @@ Example structure:
  ┣ 📂Microsoft.Authorization
  ┃ ┗ 📂policyassignments
  ┃   ┣ 📂samples
+ ┃   ┃ ┗ localDeploypolicies.ps1
  ┃   ┣ 📂test
- ┃   ┣ 📜readme.md
+ ┃   ┃ ┣ happy-flow.params.json
+ ┃   ┃ ┣ invalid-setting.params.json
+ ┃   ┃ ┗ unhappy-flow.params.json
+ ┃   ┣ deploy.bicep
+ ┃   ┗ 📜readme.md
  ┣ 📂Microsoft.KeyVault
- ┃ ┣ 📂Microsoft.Authorization
- ┃ ┣ 📂Microsoft.KeyVault
- ┃ ┣ 📂Microsoft.Network
- ┃ ┗ 📂Microsoft.Storage
+ ┃ ┗ 📂vaults
+ ┃   ┣ 📂samples
+ ┃   ┃ ┗ localDeploypolicies.ps1
+ ┃   ┣ 📂test
+ ┃   ┃ ┣ happy-flow.params.json
+ ┃   ┃ ┣ invalid-setting.params.json
+ ┃   ┃ ┗ unhappy-flow.params.json
+ ┃   ┣ deploy.bicep
+ ┃   ┗ 📜readme.md
  ┣ 📂Microsoft.Network
- ┃ ┣ 📂Microsoft.Authorization
- ┃ ┣ 📂Microsoft.KeyVault
- ┃ ┣ 📂Microsoft.Network
- ┃ ┗ 📂Microsoft.Storage
+ ┃ ┣ 📂dnszones
+ ┃ ┃ ┣ 📂samples
+ ┃ ┃ ┃ ┗ localDeploypolicies.ps1
+ ┃ ┃ ┣ 📂test
+ ┃ ┃ ┃ ┣ happy-flow.params.json
+ ┃ ┃ ┃ ┣ invalid-setting.params.json
+ ┃ ┃ ┃ ┗ unhappy-flow.params.json
+ ┃ ┃ ┣ deploy.bicep
+ ┃ ┃ ┗ 📜readme.md
+ ┃ ┗ 📂virtualnetworks
+ ┃   ┣ 📂samples
+ ┃   ┃ ┗ localDeploypolicies.ps1
+ ┃   ┣ 📂test
+ ┃   ┃ ┣ happy-flow.params.json
+ ┃   ┃ ┣ invalid-setting.params.json
+ ┃   ┃ ┗ unhappy-flow.params.json
+ ┃   ┣ deploy.bicep
+ ┃   ┗ 📜readme.md
  ┣ 📂Microsoft.Storage
- ┃ ┣ 📂Microsoft.Authorization
- ┃ ┣ 📂Microsoft.KeyVault
- ┃ ┣ 📂Microsoft.Network
- ┃ ┗ 📂Microsoft.Storage
+ ┃ ┗ 📂storageaccounts
+ ┃   ┣ 📂samples
+ ┃   ┃ ┗ localDeploypolicies.ps1
+ ┃   ┣ 📂test
+ ┃   ┃ ┣ happy-flow.params.json
+ ┃   ┃ ┣ invalid-setting.params.json
+ ┃   ┃ ┗ unhappy-flow.params.json
+ ┃   ┣ deploy.bicep
+ ┃   ┗ 📜readme.md
  ┗ 📜readme.md
 ```
