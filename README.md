@@ -7,10 +7,12 @@ It is an example that is based on best practices, personal experiences, and
 guidelines for creating and organizing code and resources tailored for Azure
 infrastructure deployment.\
 The goal of this repository is to help users reduce their start-up time by
-providing the necessary structure
+providing the necessary structure.
+
+
 
 # How to use this repository
 
 1. Clone or fork the repo
 2. Modify the structure to fit your specific needs
-3. Star it to keep tack of updates ;-)
+3. Star it to keep track of updates ;-)

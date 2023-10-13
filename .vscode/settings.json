@@ -38,8 +38,6 @@
   "powershell.codeFormatting.addWhitespaceAroundPipe": true,
   "powershell.codeFormatting.whitespaceAroundOperator": true,
   "powershell.codeFormatting.whitespaceAfterSeparator": true,
-  "azureFunctions.projectRuntime": "~2",
-  "azureFunctions.projectLanguage": "PowerShell",
   "files.exclude": {
     "obj": true,
     "bin": true
@@ -55,7 +53,7 @@
     "*.yml": "azure-pipelines"
   },
   "workbench.colorCustomizations": {
-    "statusBar.background": "#00B582"
+    "statusBar.background": "#21681b"
   },
   "cSpell.enableFiletypes": [
     "azure-pipelines",
