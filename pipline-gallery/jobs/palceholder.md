@@ -1,13 +1,5 @@
 # Purpose
 
-
-Example structure:
-
-```html
-📦pipline-gallery
- ┣ 📂jobs
- ┃ ┗ 📜palceholder.md
- ┣ 📂steps
- ┃ ┗ 📜palceholder.md
- ┗ 📜palceholder.md
-```
+Reusable yaml files definitions of pipeline jobs should be placed here.\
+It is recommended to use the `.yml` file extension for
+these files.
